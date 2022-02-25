@@ -1,4 +1,149 @@
-@import "_estilos_de_elementos_compartidos";
+@import"_estilo_index";
+/*--------------------------------------------------------------------------------------------.     ---------------------------------   ----------------------------  ---------------------------------------------------------------------------------------------------------  --------------------------------------         ----             ---                                                     -----------------------------------------""""Media-Queries""""------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+
+@media only screen and (max-width: 1000px) {
+          .parrafoPrincipalPresentacion {
+                    background-image: none;
+                    background-color: #fff;
+          }
+}
+
+@media only screen and (max-width: 600px) {
+          .parrafoPrincipalPresentacion h2 {
+                    margin-left: 0;
+                    display: flex;
+                    justify-content: center;
+          }
+
+          .conte__logo--titulo h1 {
+                    text-align: center;
+          }
+
+}
+
+@media only screen and (max-width: 1000px) {
+          .conte__menu--barraMenu li {
+                    width: 100px !important;
+                    padding: 1em;
+          }
+
+          .navbar-collapse {
+                    background-color: rgb(65, 202, 191) !important;
+                    z-index: 11;
+                    opacity: 0.8;
+                    text-align: center;
+                    width: 30px !important;
+          }
+}
+
+/* esta media query es para mas adelante agrgarle java scrip y hacer un menu interactivo (cuando lo aprenda xD ) */
+
+@media only screen and (max-width: 871px) and (min-width: 600px) {
+
+
+          /* mapa contactanos */
+          .contenido__form {
+
+                    flex-direction: column;
+          }
+
+          .conte__logo--titulo h1 {
+                    font-size: 2rem;
+          }
+}
+
+/* modificacion para nav redes */
+@media only screen and (max-width: 470px) {
+          .navRedes__ul li {
+                    padding: 1em;
+                    margin: 0;
+          }
+
+          /* form de contactanos.html */
+          .form-register {
+                    width: 300px;
+          }
+
+          /* paraquitar el logo en una resulucion reducida,para una mejor experiencia del usuario */
+          .conte__logo--icono {
+                    display: none;
+          }
+
+          .navbar-brand {
+                    margin-left: 1rem;
+          }
+
+          /* modificacion del titulo */
+          h1 {
+                    text-align: center;
+          }
+
+          /* iframe contactanos.index */
+          .contenido__form iframe {
+                    width: 400px;
+          }
+}
+
+@media only screen and (max-width: 350px) {
+          .contenido__form iframe {
+                    width: 250px;
+          }
+
+          .contenido__form--estilos {
+                    width: 15rem;
+          }
+
+          .navRedes__ul li {
+                    padding: 0px;
+          }
+}
+
+/* le quito la animaciones a la pantalla pequeña por que la clase hover no se aplica */
+@media screen and (max-width: 992px) {
+          figure .trasera {
+                    backface-visibility: visible;
+                    transform: perspective(600px) rotateY(0deg);
+          }
+
+          .contenedor_tarjeta:hover figure {
+                    transform: perspective(600px) rotateY(0deg);
+
+          }
+
+          .quienesSomos__article__caja__texto p {
+                    margin-left: 1em;
+                    margin-right: 0.5em;
+          }
+}
+
+/* pagina nuestros servicios */
+@media screen and (max-width: 950px) {
+          .servicios__caja3 {
+                    display: flex;
+                    padding: 0;
+                    position: relative;
+                    width: 100%;
+                    justify-content: space-evenly;
+                    align-items: stretch;
+                    flex-wrap: wrap;
+                    flex-direction: row;
+          }
+}
+
+@media screen and (min-width: 200px) and (max-width: 1156px) {
+          .servicios__caja1 {
+
+                    flex-wrap: wrap;
+                    flex-direction: column;
+          }
+
+          .servicios__caja2 {
+                    flex-direction: column;
+          }
+}
+
 *{
           margin: 0;
           padding: 0;
