@@ -1,5 +1,214 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
 @import"_estilo_index";
-/*--------------------------------------------------------------------------------------------.     ---------------------------------   ----------------------------  ---------------------------------------------------------------------------------------------------------  --------------------------------------         ----             ---                                                     -----------------------------------------""""Media-Queries""""------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+$color1:#3CACAE;
+$color2:#fff;
+$color3:#000;
+
+* {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+}
+
+/* -----------------------------------------------------------------------------------------
+------- ESTILOS DE LA PAGINA index.html
+--------- &
+--------ENCABEZADO DE TODAS LAS PAGINAS HTML
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+.conte {
+          width: 100%;
+          height: 100vh;
+          background-color: $color3;
+}
+
+.conte__video {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100vh;
+          object-fit: cover;
+          opacity: 0.8;
+          z-index: 0;
+}
+
+/* sobre capa del video */
+.conte__overlay {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100vh;
+          background: $color1;
+          mix-blend-mode: hard-light;
+}
+
+
+
+
+/* estilos menu */
+.nav-link {
+          font-size: 1.2em;
+          color: $color3 !important;
+          font-weight: 700;
+
+}
+
+
+
+
+.fondo__navBar {
+          height: 70px;
+          background: rgba(60, 172, 174, 1);
+          background: -moz-linear-gradient(45deg, rgba(60, 172, 174, 1) 0%, rgba(200, 244, 249, 1) 100%);
+          background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(60, 172, 174, 1)), color-stop(100%, rgba(200, 244, 249, 1)));
+          background: -webkit-linear-gradient(45deg, rgba(60, 172, 174, 1) 0%, rgba(200, 244, 249, 1) 100%);
+          background: -o-linear-gradient(45deg, rgba(60, 172, 174, 1) 0%, rgba(200, 244, 249, 1) 100%);
+          background: -ms-linear-gradient(45deg, rgba(60, 172, 174, 1) 0%, rgba(200, 244, 249, 1) 100%);
+          background: linear-gradient(45deg, rgba(60, 172, 174, 1) 0%, rgba(200, 244, 249, 1) 100%);
+          filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3cacae', endColorstr='#c8f4f9', GradientType=1);
+}
+
+.navbar li {
+          margin: 2em;
+          display: inline;
+          font-size: 1em;
+/* animación menu */
+          a {
+                    &:hover {
+                              color: $color2 !important;
+                    }
+          }
+}
+
+.nav ul{
+          display: flex;
+          // align-content: flex-end;
+          top: 30em;
+}
+
+
+.collapse {
+          align-items: center;
+          flex-direction: column;
+}
+
+.navbar-brand {
+          font-weight: 900;
+          font-size: 2rem;
+          border-radius: 30px;
+
+          li {
+                    margin: 2em;
+                    display: inline;
+                    font-size: 1em;
+          }
+}
+
+/* estilo logo */
+.conte__logo {
+          display: flex;
+          justify-content: center;
+          position: relative;
+          z-index: 10;
+          cursor: pointer;
+          top: 200px;
+          a {
+                    text-decoration: none;
+          }
+}
+
+/* estilos del titulo    */
+
+
+
+.contenedor_titulo{
+          align-content: center;
+          top: 10em;
+          position: absolute;
+          right: 0;
+          left: 0;
+}
+
+
+.conte__logo--titulo h1 {
+          color: $color2;
+          text-transform: capitalize;
+          z-index: 10;
+          font-size: 3em;
+          font-weight: 700;
+          line-height: 1em;
+          align-items: center;
+          
+          
+}
+
+/*---------------------- estilos del menu de la redes ----------------------------------------------------*/
+
+.navRedes__ul {
+          display: inline;
+          z-index: 10;
+          &.li {
+                    list-style: none;
+                    padding: 2em;
+                    position: relative
+          }
+}
+
+.navRedes__ul li a {
+          display: inline-block;
+          
+          filter: invert(1);
+          transform: scale(0.5);
+          transition: 0.5s;
+
+          &:hover {
+                    transform: scale(0.5) translateY(-15px);
+          }
+}
+.navRedes {
+          position: absolute;
+          display: inline;
+          z-index: 10;
+          bottom: 10em;
+          right: 20px;
+          height: -40;
+}
+
+/*------------------------------------------  estilos del footer de todas las paginas html ------------------------------------------------*/
+
+.form-outline {
+          display: flex !important;
+          align-items: center !important;
+          justify-content: center !important;
+}
+
+.textofooter {
+          margin: 10px !important;
+}
+
+.fondo__footer {
+          background: rgba(200, 244, 249, 1);
+          background: -moz-linear-gradient(45deg, rgba(200, 244, 249, 1) 0%, rgba(60, 172, 174, 1) 100%);
+          background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(200, 244, 249, 1)), color-stop(100%, rgba(60, 172, 174, 1)));
+          background: -webkit-linear-gradient(45deg, rgba(200, 244, 249, 1) 0%, rgba(60, 172, 174, 1) 100%);
+          background: -o-linear-gradient(45deg, rgba(200, 244, 249, 1) 0%, rgba(60, 172, 174, 1) 100%);
+          background: -ms-linear-gradient(45deg, rgba(200, 244, 249, 1) 0%, rgba(60, 172, 174, 1) 100%);
+          background: linear-gradient(45deg, rgba(200, 244, 249, 1) 0%, rgba(60, 172, 174, 1) 100%);
+          filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#c8f4f9', endColorstr='#3cacae', GradientType=1);
+}
+
+/* ---------------------------------------- fin del footer
+------------------------------------------*/
+
+
+
+/*-----------------------------""""Media-Queries""""--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
 
 
 
@@ -57,7 +266,7 @@
 /* modificacion para nav redes */
 @media only screen and (max-width: 470px) {
           .navRedes__ul li {
-                    padding: 1em;
+                    padding: 0px;
                     margin: 0;
           }
 
@@ -93,10 +302,6 @@
 
           .contenido__form--estilos {
                     width: 15rem;
-          }
-
-          .navRedes__ul li {
-                    padding: 0px;
           }
 }
 

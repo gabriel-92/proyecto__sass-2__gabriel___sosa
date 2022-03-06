@@ -1,15 +1,56 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap");
+/*------------------------------------------ estilos del contenido main  iNDEX.HTML------------------------------------------------------*/
+.container p {
+  text-align: left;
+  max-width: 600px;
+  font-size: 23px;
+  font-weight: bold;
+  margin-top: 50px;
+  margin-left: 3.5rem;
+  color: #3CACAE; }
+
+.parrafoPrincipalPresentacion {
+  background-image: url(/multimedia/imagenes/1.svg), url(/multimedia/imagenes/normativa-drones-espana-aesa.jpg);
+  background-size: cover;
+  background-position: center;
+  max-width: 100%; }
+  .parrafoPrincipalPresentacion .h2 {
+    font-weight: 900;
+    display: inline-block;
+    padding-top: 5px; }
+
+.iconos {
+  position: relative;
+  display: flex;
+  margin-top: 60px;
+  margin-bottom: 70px;
+  flex-wrap: wrap;
+  left: 10px; }
+  .iconos .iconos_texto {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+
+.caja-carrusel {
+  width: 300px;
+  height: 300px; }
+
+.titulo-carrusel {
+  font-weight: 700;
+  font-size: 30px;
+  color: #000; }
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box; }
 
-/* ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-                                       ESTILOS DE LA PAGINA index.html
-                                                  &
-                                      ENCABEZADO DE TODAS LAS PAGINAS HTML
------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* -----------------------------------------------------------------------------------------
+------- ESTILOS DE LA PAGINA index.html
+--------- &
+--------ENCABEZADO DE TODAS LAS PAGINAS HTML
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
 .conte {
   width: 100%;
   height: 100vh;
@@ -35,7 +76,6 @@
   background: #3CACAE;
   mix-blend-mode: hard-light; }
 
-/* animacion menu */
 /* estilos menu */
 .nav-link {
   font-size: 1.2em;
@@ -56,9 +96,14 @@
 .navbar li {
   margin: 2em;
   display: inline;
-  font-size: 1em; }
+  font-size: 1em;
+  /* animación menu */ }
   .navbar li a:hover {
     color: #fff !important; }
+
+.nav ul {
+  display: flex;
+  top: 30em; }
 
 .collapse {
   align-items: center;
@@ -76,25 +121,48 @@
 /* estilo logo */
 .conte__logo {
   display: flex;
-  align-items: center;
-  top: 250px;
   justify-content: center;
   position: relative;
   z-index: 10;
-  cursor: pointer; }
+  cursor: pointer;
+  top: 200px; }
   .conte__logo a {
     text-decoration: none; }
 
 /* estilos del titulo    */
+.contenedor_titulo {
+  align-content: center;
+  top: 10em;
+  position: absolute;
+  right: 0;
+  left: 0; }
+
 .conte__logo--titulo h1 {
   color: #fff;
   text-transform: capitalize;
   z-index: 10;
   font-size: 3em;
   font-weight: 700;
-  line-height: 1em; }
+  line-height: 1em;
+  align-items: center; }
 
-/*-----------------------------------------------  estilos del menu de las redes*----------------------------------------------------------*/
+/*---------------------- estilos del menu de la redes ----------------------------------------------------*/
+.navRedes__ul {
+  display: inline;
+  z-index: 10; }
+  .navRedes__ul.li {
+    list-style: none;
+    padding: 2em;
+    position: relative; }
+
+.navRedes__ul li a {
+  display: inline-block;
+  filter: invert(1);
+  transform: scale(0.5);
+  transition: 0.5s; }
+  .navRedes__ul li a:hover {
+    transform: scale(0.5) translateY(-15px); }
+
 .navRedes {
   position: absolute;
   display: inline;
@@ -102,39 +170,6 @@
   bottom: 10em;
   right: 20px;
   height: -40; }
-  .navRedes .navRedes__ul li {
-    list-style: none;
-    padding: 2em; }
-
-.navRedes__ul li a {
-  display: inline-block;
-  margin-right: 20px;
-  filter: invert(1);
-  transform: scale(0.5);
-  transition: 0.5s; }
-  .navRedes__ul li a:hover {
-    transform: scale(0.5) translateY(-15px); }
-
-/*------------------------------------------ estilos del contenido main  iNDEX.HTML------------------------------------------------------*/
-.container p {
-  text-align: left;
-  max-width: 600px;
-  font-size: 23px;
-  font-weight: bold;
-  margin-top: 50px;
-  margin-left: 3.5rem;
-  color: #3CACAE; }
-
-.parrafoPrincipalPresentacion {
-  background-image: url(/multimedia/imagenes/1.svg), url(/multimedia/imagenes/normativa-drones-espana-aesa.jpg);
-  background-size: cover;
-  background-position: center;
-  max-width: 100%; }
-  .parrafoPrincipalPresentacion h2 {
-    font-weight: 900;
-    display: inline-block;
-    margin-left: 7em;
-    padding-top: 5px; }
 
 /*------------------------------------------  estilos del footer de todas las paginas html ------------------------------------------------*/
 .form-outline {
@@ -157,7 +192,7 @@
 
 /* ---------------------------------------- fin del footer
 ------------------------------------------*/
-/*--------------------------------------------------------------------------------------------.     ---------------------------------   ----------------------------  ---------------------------------------------------------------------------------------------------------  --------------------------------------         ----             ---                                                     -----------------------------------------""""Media-Queries""""------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*-----------------------------""""Media-Queries""""--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 @media only screen and (max-width: 1000px) {
   .parrafoPrincipalPresentacion {
     background-image: none;
@@ -192,7 +227,7 @@
 /* modificacion para nav redes */
 @media only screen and (max-width: 470px) {
   .navRedes__ul li {
-    padding: 1em;
+    padding: 0px;
     margin: 0; }
 
   /* form de contactanos.html */
@@ -218,10 +253,7 @@
     width: 250px; }
 
   .contenido__form--estilos {
-    width: 15rem; }
-
-  .navRedes__ul li {
-    padding: 0px; } }
+    width: 15rem; } }
 /* le quito la animaciones a la pantalla pequeña por que la clase hover no se aplica */
 @media screen and (max-width: 992px) {
   figure .trasera {
