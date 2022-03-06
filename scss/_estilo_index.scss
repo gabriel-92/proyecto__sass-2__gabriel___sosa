@@ -2,9 +2,10 @@ $color1:#3CACAE;
 $color2:#fff;
 $color3:#000;
 /*------------------------------------------ estilos del contenido main  iNDEX.HTML------------------------------------------------------*/
+/* inicio de estilos caja presentación*/
 
+.caja__principal__parrafo p {
 
-.container p {
           text-align: left;
           max-width: 600px;
           font-size: 23px;
@@ -14,6 +15,7 @@ $color3:#000;
           color: $color1;
 }
 
+/*background y titulo precentacion*/
 
 
 .parrafoPrincipalPresentacion {
@@ -30,19 +32,23 @@ $color3:#000;
           }
           
 }
+/*estilos de icono alusivos a servicios prestados*/
 .iconos{
           position: relative;
           display: flex;
           margin-top: 60px;
           margin-bottom: 70px;
-          flex-wrap: wrap;
-          left: 10px;
+          flex-wrap:nowrap ;
+          max-width: 300px;
           .iconos_texto{
                     display: flex;
                     flex-direction: column;
                     align-items: center;
-          }
+                    text-align: center;
+                    max-width: 1000px;
+                    }
 }
+/* carrusel de logotipos de empresas colaboradoras*/
 .caja-carrusel{
           width: 300px ;
           height: 300px;
@@ -53,3 +59,4 @@ $color3:#000;
           font-size: 30px ;
           color: $color3;
 }
+/*fin de estilos caja presentación*/
