@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
-@import"_estilo_index";
-
+@import "_estilo_index";
+@import "_estilos_contactos";
 
 $color1:#3CACAE;
 $color2:#fff;
@@ -247,12 +247,11 @@ $color3:#000;
           }
 }
 
-/* esta media query es para mas adelante agrgarle java scrip y hacer un menu interactivo (cuando lo aprenda xD ) */
+/* esta media query es para mas adelante agregarle java scrip y hacer un menu interactivo (cuando lo aprenda xD ) */
 
 @media only screen and (max-width: 871px) and (min-width: 600px) {
 
-
-          /* mapa contactanos */
+/* mapa Contáctanos */
           .contenido__form {
 
                     flex-direction: column;
@@ -260,22 +259,18 @@ $color3:#000;
 
           .conte__logo--titulo h1 {
                     font-size: 2rem;
-          }
+          } 
 }
 
-/* modificacion para nav redes */
+
+/* modificación para nav redes */
 @media only screen and (max-width: 470px) {
           .navRedes__ul li {
                     padding: 0px;
                     margin: 0;
           }
 
-          /* form de contactanos.html */
-          .form-register {
-                    width: 300px;
-          }
-
-          /* paraquitar el logo en una resulucion reducida,para una mejor experiencia del usuario */
+          /* para quitar el logo en una resolución reducida,para una mejor experiencia del usuario */
           .conte__logo--icono {
                     display: none;
           }
@@ -284,18 +279,18 @@ $color3:#000;
                     margin-left: 1rem;
           }
 
-          /* modificacion del titulo */
+          /* modificación del titulo */
           h1 {
                     text-align: center;
           }
 
-          /* iframe contactanos.index */
+          /* iframe Contáctanos.index */
           .contenido__form iframe {
-                    width: 400px;
+                    width: 200px;
           }
 }
 
-@media only screen and (max-width: 350px) {
+@media only screen and (min-width: 250px) and (max-width: 450px) {
           .contenido__form iframe {
                     width: 250px;
           }
