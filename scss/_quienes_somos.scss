@@ -1,18 +1,19 @@
-
+$color1:#3CACAE;
+$color2:#fff;
+$color3:#000;
 .quienesSomos__article {
           display: flex;
           justify-content: center;
-          ;
-          color: #3CACAE;
+          color: $color1;
 
 }
 
 .quienesSomos__article__caja__texto {
           width: 30em;
-           p {
-                              font-weight: 600;
-                              font-size: 1.5em;
-                              text-align: left;
+          p{
+                    font-weight: 600;
+                    font-size: 1.5em;
+                    text-align: left;
           }
 }
 

@@ -5,19 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="shortcut icon" href="multimedia/imagenes/favicon.ico">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    <title>Quienes Somos</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Quien Soy</title>
 </head>
-<body>
+<body class="mb-0">
     <header>
         <section class="conte">
-            <video class="conte__video"   autoplay muted loop src="multimedia/viedeos/video.menu.mp4"></video>
-            <div class="conte__overlay"></div>
-            <nav class="navbar navbar-expand-lg navbar-light fondo__navBar navbar-dark bg-dark">
-                <a  class=" navbar-brand conte__logo--icono" href="index.html"><img  src="multimedia/imagenes/logo.png" alt="" height="50px" width="50px"></a>
-                <a class="navbar-brand" href="index.html">Visuales</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"  aria-expanded="false" aria-label="Toggle navigation">
+            <video class="conte__video" autoplay muted loop src="multimedia/viedeos/video.menu.mp4"></video>
+            <div class="conte__overlay">
+
+                <div class="conte__logo">
+                    <a class="conte__logo--titulo text-center" href="index.html">
+                        <h1 class="text-center">Servicios Profesional De Drones</h1>
+                    </a>
+                </div>
+                <div class="navRedes">
+                    <nav>
+                        <ul class="navRedes__ul navbar">
+                            <li class="navRedes__li navRedes__li--face">
+                                <a href="#">
+                                    <img src="https://i.ibb.co/x7P24fL/facebook.png">
+                                </a>
+                            </li>
+                            <li class="navRedes__li navRedes__li--twitter">
+                                <a href="#">
+                                    <img src="https://i.ibb.co/Wnxq2Nq/twitter.png">
+                                </a>
+                            </li>
+                            <li class="navRedes__li navRedes__li--instagram">
+                                <a href="#">
+                                    <img src="https://i.ibb.co/ySwtH4B/instagram.png">
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            </div>
+            <nav class="navbar fondo__navBar navbar-expand-lg navbar-light bg-light navbar-dark  bg-dark">
+                <a class=" navbar-brand conte__logo--icono" href="index.html">
+                    <img src="multimedia/imagenes/logo.png" alt="" height="50px" width="50px">
+                </a>
+                <a class="navbar-brand" href="index.html">Visuales
+                </a>
+                <button class="navbar-toggler bg-dark" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                    aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
@@ -39,20 +74,8 @@
                         </li>
                     </ul>
                 </div>
-            </nav> 
-            <div class="conte__logo">
-                <a class="conte__logo--titulo" href="index.html"><h1 >Servicios Profesional De Drones</h1></a>
-            </div>
-            <div class="navRedes">
-                <nav>
-                    <ul class="navRedes__ul">
-                        <li class="navRedes__li--face"><a href="#"><img src="https://i.ibb.co/x7P24fL/facebook.png"></a></li>
-                        <li class="navRedes__li--twitter"><a href="#"><img src="https://i.ibb.co/Wnxq2Nq/twitter.png"></a></li>
-                        <li class="navRedes__li--instagram"><a href="#"><img src="https://i.ibb.co/ySwtH4B/instagram.png"></a></li>
-                    </ul> 
-                </nav>
-            </div>
-        </section>  
+            </nav>
+        </section>
     </header>
     <main class="">
         <div class="text-center bg-light">
@@ -73,10 +96,10 @@
             </div>
         </div>
     </main>
-<!-- inicio footer -->
-    <footer  class="mt-0 bg-light fondo__footer text-center text-dark">
+    <!-- inicio footer -->
+    <footer class="mt-0 bg-light fondo__footer text-center text-dark">
         <div class="container ">
-            <form  action="">
+            <form action="">
                 <div class="row d-flex justify-content-center">
                     <div class=" col-12 mt-0 form-outline     form-dark">
                         <p class=" text-dark textofooter text-center ">
@@ -85,23 +108,26 @@
                     </div>
                     <div class=" textcenter col-auto">
                         <input type="email" id="butoon-footer" placeholder="Ejemplo@ejemplo.com" class="form-control" />
-                            <label class="form-label" for="butoon-footer"></label>
-                            <button type="submit" class="btn mt-3 mb-3 btn-outline-dark ">
-                                Suscríbete
-                            </button>
+                        <label class="form-label" for="butoon-footer"></label>
+                        <button type="submit" class="btn mt-3 mb-3 btn-outline-dark ">
+                            Suscríbete
+                        </button>
                     </div>
                 </div>
-            </form>            
+            </form>
         </div>
-            <!-- Copyright -->
+        <!-- Copyright -->
         <div class="footer-copyright text-center">© 2022 Copyright:
             <a href="index.html"> Visuales</a>
         </div>
-            <!-- Copyright -->
+        <!-- Copyright -->
     </footer>
     <!-- fin del footer -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
 </body>
 </html>
